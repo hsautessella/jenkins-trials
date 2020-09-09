@@ -1,8 +1,9 @@
 #!groovy
 
-def root_dir = pwd()
-def utils = load "${root_dir}/groovy/jenkins_utils.groovy"
-
+node {
+  def root_dir = pwd()
+  def utils = load "${root_dir}/groovy/utils.groovy"
+}
 
 properties([
   parameters([
