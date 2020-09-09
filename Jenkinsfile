@@ -1,7 +1,7 @@
 #!groovy
 
-GroovyShell shell = new GroovyShell()
-def utils = shell.parse(new File('./groovy/jenkins_utils.groovy'))
+def root_dir = pwd()
+def utils = load "${root_dir}/groovy/jenkins_utils.groovy"
 
 
 properties([

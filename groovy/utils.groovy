@@ -70,3 +70,5 @@ def get_default_herbert_branch(String job_name) {
       return 'master'
   }
 }
+
+return this
