@@ -1,9 +1,11 @@
 #!groovy
 
-node {
-  def root_dir = pwd()
-  def utils = load "${root_dir}/groovy/utils.groovy"
-}
+// node {
+//   def root_dir = pwd()
+//   def utils = load "${root_dir}/groovy/utils.groovy"
+// }
+
+evaluate(new File("./groovy/utils.groovy"))
 
 properties([
   parameters([
