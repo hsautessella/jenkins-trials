@@ -140,6 +140,7 @@ pipeline {
         steps {
           echo 'Pipelines started'
           echo "${env.BRANCH_NAME}"
+          sh 'git rev-parse HEAD'
         }
       }
     }
