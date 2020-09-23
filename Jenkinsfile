@@ -1,7 +1,8 @@
 #!groovy
 
-def utils = load('groovy/utils.groovy')
-
+node {
+  def utils = load('groovy/utils.groovy')
+}
 
 properties([
   parameters([
