@@ -7,31 +7,31 @@ node {
 properties([
   parameters([
     string(
-      defaultValue: get_branch_name(env.JOB_BASE_NAME),
+      defaultValue: utils.get_branch_name(env.JOB_BASE_NAME),
       description: 'The name of the branch to build.',
       name: 'BRANCH_NAME',
       trim: true
     ),
     string(
-      defaultValue: get_default_herbert_branch(env.JOB_BASE_NAME),
+      defaultValue: utils.get_default_herbert_branch(env.JOB_BASE_NAME),
       description: 'The name of the branch of Herbert to use.',
       name: 'HERBERT_BRANCH_NAME',
       trim: true
     ),
     string(
-      defaultValue: get_matlab_release(env.JOB_BASE_NAME),
+      defaultValue: utils.get_matlab_release(env.JOB_BASE_NAME),
       description: 'The release number of the Matlab to load e.g. R2019b.',
       name: 'MATLAB_VERSION',
       trim: true
     ),
     string(
-      defaultValue: get_release_type(env.JOB_BASE_NAME),
+      defaultValue: utils.get_release_type(env.JOB_BASE_NAME),
       description: 'The type of the build e.g. "nightly", "release", "pull_request".',
       name: 'RELEASE_TYPE',
       trim: true
     ),
     string(
-      defaultValue: get_agent(env.JOB_BASE_NAME),
+      defaultValue: utils.get_agent(env.JOB_BASE_NAME),
       description: 'The agent to execute the pipeline on.',
       name: 'AGENT',
       trim: true
