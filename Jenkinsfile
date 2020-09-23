@@ -5,7 +5,7 @@ node {
   // def utils = load "/var/lib/jenkins/workspace/jenkins-trials"
   echo pwd()
   sh 'ls'
-  checkout scm
+  // checkout scm
   def utils = load "${root_dir}/groovy/utils.groovy"
 
   properties([
