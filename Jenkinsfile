@@ -2,7 +2,7 @@
 
 node {
   def root_dir = pwd()
-  def utils = load "${root_dir}@groovy/utils.groovy"
+  def utils = load "${root_dir}/groovy/utils.groovy"
 
   properties([
     parameters([
